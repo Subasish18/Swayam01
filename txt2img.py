@@ -1,4 +1,4 @@
-import replicate
+#import replicate
 import streamlit as st
 import requests
 import zipfile
