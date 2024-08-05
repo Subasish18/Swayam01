@@ -59,6 +59,7 @@ def main():
             # Save DataFrame to CSV
             df.to_csv("phone_usage_data.csv", index=False)
             st.success("Data saved successfully!")
+            st.dataframe(" phone_usage_data.csv")
 
 if __name__ == "__main__":
     main()
