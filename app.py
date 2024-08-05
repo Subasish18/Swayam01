@@ -3,8 +3,8 @@ import pandas as pd
 
 def main():
     st.title("""
-    #Phone Usage and its impact on studies
-    ##data collection for *project work*""")
+    # Phone Usage and its impact on studies
+    ## Data collection for *project work*""")
 
     # User inputs
     name = st.text_input("Enter your name:")
@@ -74,6 +74,12 @@ def main():
                 "text/csv",
                 key='download-csv'
             )
+
+    # Sidebar for Twitter follow
+    st.sidebar.title("Follow me on Twitter")
+    twitter_handle = "@SwapnilaSwayam"  # Replace with your actual Twitter handle
+    twitter_url = f"https://twitter.com/{twitter_handle}"
+    st.sidebar.markdown(f"[Follow @{twitter_handle} on Twitter]({twitter_url})")
 
 if __name__ == "__main__":
     main()
