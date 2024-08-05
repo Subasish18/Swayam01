@@ -77,7 +77,7 @@ def main():
 
     # Sidebar for Twitter follow
     st.sidebar.title("Follow me on Twitter")
-    twitter_handle = "@SwapnilaSwayam"  # Replace with your actual Twitter handle
+    twitter_handle = "SwapnilaSwayam"  # Replace with your actual Twitter handle
     twitter_url = f"https://twitter.com/{twitter_handle}"
     st.sidebar.markdown(f"[Follow @{twitter_handle} on Twitter]({twitter_url})")
 
