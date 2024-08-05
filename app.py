@@ -57,16 +57,21 @@ def main():
             df = pd.concat([df, new_data], ignore_index=True)
 
             # Save DataFrame to CSV
-            st.dataframe("new_data")
             df.to_csv("phone_usage_data.csv", index=False)
             st.success("Data saved successfully!")
-            
-st.download_button(
-   "Press to Download",
-   csv,
-   "file.csv",
-   "text/csv",
-   key='download-csv'
-)
+
+            # Display the DataFrame in the app
+            st.dataframe(df)
+
+            # Create a download button for the CSV file
+            csv = df.to_csv(index=False).encode('utf-8')
+            st.download_button(
+                "Press to Download",
+                csv,
+                "phone_usage_data.csv",
+                "text/csv",
+                key='download-csv'
+            )
+
 if __name__ == "__main__":
     main()
