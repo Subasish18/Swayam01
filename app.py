@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 def main():
-    st.title("Phone Usage Survey")
+    st.title("Phone Usage and its impact on studies \n data collection for project work")
 
     # User inputs
     name = st.text_input("Enter your name:")
