@@ -57,9 +57,16 @@ def main():
             df = pd.concat([df, new_data], ignore_index=True)
 
             # Save DataFrame to CSV
+            st.dataframe("new_data")
             df.to_csv("phone_usage_data.csv", index=False)
             st.success("Data saved successfully!")
-            st.dataframe(" phone_usage_data.csv")
-
+            
+st.download_button(
+   "Press to Download",
+   csv,
+   "file.csv",
+   "text/csv",
+   key='download-csv'
+)
 if __name__ == "__main__":
     main()
