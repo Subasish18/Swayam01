@@ -1,4 +1,4 @@
-#import replicate
+import replicate
 import streamlit as st
 import requests
 import zipfile
@@ -7,11 +7,11 @@ from utils import icon
 from streamlit_image_select import image_select
 
 # UI configurations
-st.set_page_config(page_title="Replicate Image Generator",
+st.set_page_config(page_title="Text to Image Generator\n by Swayam Swapnila",
                    page_icon=":bridge_at_night:",
                    layout="wide")
 icon.show_icon(":foggy:")
-st.markdown("# :rainbow[Text-to-Image Artistry Studio]")
+st.markdown("# :rainbow[Text-to-Image generator AI]")
 
 # API Tokens and endpoints from `.streamlit/secrets.toml` file
 REPLICATE_API_TOKEN = st.secrets["REPLICATE_API_TOKEN"]
